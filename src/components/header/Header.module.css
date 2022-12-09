@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  background-color: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+}
+header > .container {
+  max-width: 1488px;
+  margin: auto;
+  padding: 20px 32px;
+}
+.headerWrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__searchWrapper {
+  border: 2px solid #fbc100;
+  height: 44px;
+  /* padding: 5px 10px; */
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-radius: 8px;
+}
+.header__searchElements{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0 20px;
+
+}
+.search__select {
+  background-color: #f7f7f7;
+  width: 170px;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: inherit;
+}
+
+.search__input {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  text-indent: 10px;
+  border: none;
+  outline: none;
+}
+.voice__search{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  margin-right: 10px;
+  height: 101%;
+  cursor: pointer;
+
+}
+.search__btn {
+  background-color: #fbc100;
+  height: 103%;
+  margin-right: -2px;
+  padding: 0 10px;
+  font-size: 20px;
+  width: 80px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  display: block;
+  border-radius: 0px 5px 5px 0;
+  position: relative;
+}
+.search__btn::before{
+  left: -8px;
+  top:  0px;
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 99%;
+  border-radius: 8px;
+  background-color: #fff;
+}
+.site__nav{
+  display: flex;
+  gap: 10px;
+  text-align: center;
+}
+.sitenav__links{
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+.sitenav__links:first-child{
+  width: 110px;
+}
+.icon__title{
+  font-size: 14px;
+}
+
+
+@media only screen and (max-width:1240px) {
+  .icon__title{
+    display: none;
+  }
+  .sitenav__links:first-child{
+    width: auto;
+  }
+  .sitenav__links{
+    width: 40px;
+  }
+
+}
+
+@media only screen and (max-width:1024px) {
+  .site__nav{
+    display: none;
+  }
+  .header__searchElements{
+    width: 90%;
+  }
+  .search__select{
+    display: none;
+  }
+  .logo__img{
+    display: none;
+  }
+  .search__btn::before{
+    top: 0.5px;
+  }
+  header > .container {
+    padding: 0;
+  }
+
+  .headerWrapper{
+    margin: auto;
+  }
+}

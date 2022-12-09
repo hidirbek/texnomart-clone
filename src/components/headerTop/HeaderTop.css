@@ -1,0 +1,315 @@
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.header-top {
+  width: 100%;
+  height: 36px;
+  background-color: #333;
+}
+
+.header-top-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1448px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.header-top-left-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-region-div,
+.header-region-div-media {
+  position: relative;
+  margin-right: 40px;
+  padding: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header-region-div:hover .header-region-value {
+  display: block;
+}
+
+.header-region-value {
+  width: 170px;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  background-color: white;
+  box-shadow: 0px 0px 0px 2px rgb(241, 238, 238);
+  display: none;
+  color: black;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.regionValue,
+.regionValue-media {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 4px;
+  font-family: "Roboto-Regular";
+}
+
+.location-icons,
+.location-icons-media {
+  font-size: 18px;
+  color: #fff;
+}
+
+.header-top-data-text {
+  padding: 10px 15px;
+  font-size: 13px;
+  color: #333;
+  font-weight: 400;
+  font-family: "Roboto-Regular";
+}
+
+.header-top-data-text:hover {
+  background-color: antiquewhite;
+}
+
+.header-top-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.header-top-navbar-list {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 8px 0px;
+  font-family: "Roboto-Regular";
+}
+
+.B2B {
+  padding: 3px 7px;
+  background-color: hsla(0, 0%, 84.7%, 0.2);
+  border-radius: 5px;
+}
+
+.header-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-top-contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-name {
+  color: #fff;
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "Roboto-Medium";
+}
+
+.contact-nommer {
+  color: #fff;
+  font-size: 18px !important;
+  margin-left: 10px;
+  line-height: 16px;
+  font-family: "Roboto-Medium";
+}
+
+.header-top-language-div {
+  position: relative;
+  cursor: pointer;
+}
+
+.header-top-language-div:hover .language-hover-value {
+  display: block;
+}
+
+.header-top-language {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 32px;
+  padding: 2px 4px;
+  border: 1px solid hsla(0, 0%, 84.7%, 0.2);
+  border-radius: 150px;
+  color: #fff;
+  width: 70px;
+}
+
+.language-hover-value {
+  display: none;
+  position: absolute;
+  right: 5px;
+  top: 27px;
+  background-color: white;
+  box-shadow: 0px 0px 0px 2px rgb(241, 238, 238);
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.language-hover-value-list {
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.language-hover-value-list:hover {
+  background-color: antiquewhite;
+  border-radius: 0px;
+}
+
+.language-global-icons {
+  color: #fff !important;
+  font-size: 20px;
+}
+
+.language-global-value {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.call-icon-media {
+  display: none;
+  color: white;
+  font-size: 18px;
+}
+
+.headerTop-media-logo {
+  width: 152px !important;
+  height: 25px;
+  display: none;
+}
+
+.header-region-div-media {
+  display: none;
+}
+
+@media only screen and (max-width: 1330px) {
+  .header-region-div {
+    margin-right: 16px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .header-region-div {
+    margin-right: 10px;
+  }
+
+  .header-top-navbar {
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .call-icon-media {
+    display: block;
+  }
+
+  .contact-name {
+    display: none;
+  }
+
+  .contact-nommer {
+    font-size: 13px !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .header-top {
+    height: 48px;
+    background-color: transparent;
+  }
+
+  .header-top-language-div,
+  .header-top-navbar {
+    display: none;
+  }
+
+  .header-region-div {
+    padding: 7px 0px;
+  }
+
+  .header-region-value {
+    top: 45px;
+  }
+
+  .contact-nommer,
+  .call-icon-media,
+  .regionValue,
+  .location-icons {
+    color: #333;
+  }
+
+  .header-search-btn-click,
+  .headerCenter-texnomartLogo,
+  .header-microphone::after,
+  .header-search-catalog {
+    display: none;
+  }
+
+  .texnomart-sidebar {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .headerTop-media-logo {
+    display: block;
+  }
+  .header-bottom {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  .header-region-div-media {
+    display: block;
+  }
+
+  .header-top-left-content {
+    display: none;
+  }
+
+  .location-icons-media,
+  .regionValue-media {
+    color: #333;
+  }
+
+  .header-region-div-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+  }
+
+  .header-top-content {
+    padding: 0px 10px;
+  }
+
+  .contact-nommer {
+    display: none;
+  }
+}
