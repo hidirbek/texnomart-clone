@@ -64,25 +64,45 @@ const Catalog = () => {
         Каталог
       </div>
       {catalog && (
-        <div className="opened-catalog">
-          <div className="catalog-box">
-            {catalogData.map((el, idx) => {
-              <div
-                key={idx}
-                className="catalog-titles"
-                style={
-                  catalogIdx === idx
-                    ? { backgroundColor: "rgba(251, 193, 0, .2)" }
-                    : null
-                }
-                onMouseMove={() => setCatalogIdx(idx)}
-              >
-                <div className="title-wrapper">
-                  <img className="title-icon" src={el.img} alt={el.title} />
-                  <p className="cat-title">{el.title}</p>
+        <div className="opened-catalog-wrapper">
+          <div className="opened-catalog">
+            <div className="catalog-title-box">
+              {catalogData.map((el, index) => {
+                return (
+                  <div
+                    key={index}
+                    className="catalog-titles"
+                    style={
+                      catalogIdx === index
+                        ? { backgroundColor: "rgba(251, 193, 0, .2)" }
+                        : null
+                    }
+                    onMouseMove={() => setCatalogIdx(index)}
+                  >
+                    <div className="title-wrapper">
+                      <img className="title-icon" src={el.img} alt={el.title} />
+                      <p className="cat-title">{el.title}</p>
+                    </div>
+                    <IoIosArrowForward className="cat-icon" />
+                  </div>
+                );
+              })}
+            </div>
+            {catalogData.map((el, index) => {
+              return catalogIdx === index ? (
+                <div className="catalog-elements-container">
+                  <div className="catalog-elements-box">
+                    <h2 className="catalog-category-title">{el.title}</h2>
+                    <div className="catalog-category-subtitles-wrapper">
+                      <h3 className="catalog-category-subtile">{el.category.sub__title}</h3>
+                      {el.category.sub__categories.map((el) => {
+                        return <p className="category-subtitles-info">{el}</p>;
+                      })}
+                    </div>
+                  </div>
+
                 </div>
-                <IoIosArrowForward className="cat-icon" />
-              </div>;
+              ) : null;
             })}
           </div>
         </div>

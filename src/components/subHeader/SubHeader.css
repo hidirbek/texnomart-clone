@@ -18,6 +18,9 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
+  gap: 5px;
+  /* padding: 0 10px; */
+
 }
 .subheader_navItem{
   cursor: pointer;
@@ -38,4 +41,11 @@
   color: #767676;
   display: flex;align-items: center;
   gap: 3px;
+}
+
+@media only screen and (max-width:1024px) {
+  .subheader{
+    display: none;
+  }
+
 }

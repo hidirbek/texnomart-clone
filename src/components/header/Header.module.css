@@ -6,7 +6,7 @@
 header {
   background-color: #f7f7f7;
   font-family: "Roboto", sans-serif;
-
+  padding: 0 0 20px 0;
 }
 .container{
   max-width: 1488px;

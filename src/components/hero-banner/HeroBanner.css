@@ -1,0 +1,46 @@
+.swiper-button-prev{
+  color: black;
+}
+.swiper-button-prev::before{
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50% ;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: -8px;
+}
+.swiper-button-next{
+ color: black;
+}
+.swiper-button-next::before{
+  font-size: 35px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border-radius: 50% ;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  right: -8px;
+}
+.swiper-pagination-bullet{
+  background-color: #000;
+  opacity: 0.7;
+}
+.swiper-pagination-bullet-active{
+  background-color: transparent;
+  border: 2px solid #333;
+}
+.banner-img{
+  /* height: 100%; */
+  /* width: 100%; */
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center center;
+  object-position: center center;
+  vertical-align: middle;
+
+}
