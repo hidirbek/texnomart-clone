@@ -1,10 +1,16 @@
 import React from "react";
 import Banner from "../hero-banner/HeroBanner";
+import Swiper from "../swiper/Swiper";
+import CategorySwiper from "../category-swiper/CategorySwiper";
+import ZorNarx from "../zor-narx/ZorNarx";
 const Main = () => {
   return (
-    <main>
+    <div>
       <Banner />
-    </main>
+      <Swiper />
+      <CategorySwiper />
+      <ZorNarx/>
+    </div>
   );
 };
 

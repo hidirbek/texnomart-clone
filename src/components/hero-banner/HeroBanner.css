@@ -1,8 +1,22 @@
+.hero-swiper> .swiper-button-prev{
+  left: 80px;
+}
+.hero-swiper> .swiper-button-next{
+  right: 80px;
+}
+
 .swiper-button-prev{
   color: black;
 }
+.swiper-button-prev::after{
+  font-size: 30px;
+
+}
+.swiper-button-next::after{
+  font-size: 30px;
+
+}
 .swiper-button-prev::before{
-  font-size: 35px;
   width: 50px;
   height: 50px;
   background: #fff;
@@ -10,13 +24,12 @@
   content: "";
   position: absolute;
   z-index: -1;
-  left: -8px;
+  left: -7px;
 }
 .swiper-button-next{
  color: black;
 }
 .swiper-button-next::before{
-  font-size: 35px;
   width: 50px;
   height: 50px;
   background: #fff;

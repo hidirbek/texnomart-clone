@@ -7,11 +7,12 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 import "./HeroBanner.css";
+import { v4 as uuidv4 } from 'uuid';
 
 // import required modules
 import { Pagination, Navigation } from "swiper";
 
-export default function App() {
+export default function HeroBanner() {
   const images = [
     "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/8794121920kr.webp",
     "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/5247261920kr.webp",
@@ -28,11 +29,11 @@ export default function App() {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper hero-swiper"
       >
         {
           images.map(el=>{
-            return <SwiperSlide><img className="banner-img" src={el} alt="img" /></SwiperSlide>
+            return <SwiperSlide key={uuidv4()}><img className="banner-img" src={el} alt="img" /></SwiperSlide>
           })
         }
 
