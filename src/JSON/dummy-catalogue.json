@@ -1,0 +1,113 @@
+[
+  {
+    "title": "Маиший техника",
+    "img": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/texnika_dlya_doma.svg",
+    "category": {
+      "sub__title": "ТИКУВ МАШИНАЛАРИ",
+      "sub__categories": [
+        "Chayka",
+        "Aurora",
+        "Janome",
+        "Bernette",
+        "Оверлоклар",
+        "Тикув машина тўпламлари"
+      ]
+    }
+  },
+  {
+    "title": "Офис жиҳозлари",
+    "img": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/ofisnaya_texnika.svg",
+    "category": {
+      "sub__title": "Wi-fi РОУТЕРЛАР",
+      "sub__categories": [
+        "Barcha Wi-fi routerlar",
+        "TP-Link routerlar",
+        "D-Link routerlar",
+        "Xiaomi routerlar",
+        "Tenda routerlar"
+      ]
+    }
+  },
+  {
+    "title": "Ошхона учун техника",
+    "img": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/texnika_dlya_kuxni.svg",
+    "category": {
+      "sub__title": "КИЧИК УСКУНАЛАР",
+      "sub__categories": [
+        "Блендерлар",
+        "Ҳаво ютгич",
+        "Вафли пиширгичлар",
+        "Грил ва барбекю",
+        "Ошхона тарозиси",
+        "Ошхона комбайнлари",
+        "Микротўлқинли печлар",
+        "Миксерлар"
+      ]
+    }
+  },
+  {
+    "title": "Уй учун идишлар",
+    "img": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/posuda_dlya_doma.svg",
+    "category": {
+      "sub__title": "ОВҚАТ ПИШИРИШ УЧУН",
+      "sub__categories": [
+        "Товалар",
+        "Ошхона анжомлари",
+        "Пичоқлар ва пичоқ тўпламлари",
+        "Қуймоқ тайёрлайдиган товалар",
+        "Пишириш учун қолиплар",
+        "Грил-товоқлар",
+        "WOK-товалар",
+        "Идиш-товоқ тўпламлари",
+        "Томонлари баланд товалар"
+      ]
+    }
+  },
+  {
+    "title": "Автомобил учун маҳсулотлар",
+    "img": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/tovar_dlya_avto.svg",
+    "category": {
+      "sub__title": "АВТОМОБИЛ СИГНАЛИЗАЦИЯЛАРИ",
+      "sub__categories": [
+        "Magicar автомобил сигнализациялари",
+        "StarLine автомобил сигнализациялари",
+        "Мi видеорегистраторлари",
+        "Integro радар детекторлари"
+      ]
+    }
+  },
+  {
+    "title": "Иқлим техникаси",
+    "img": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/klimaticheskaya_texnika.svg",
+    "category": {
+      "sub__title": "КОНДИЦИОНЕРЛАР",
+      "sub__categories": [
+        "Барча кондиционерлар",
+        "Samsung кондиционерлар",
+        "Sitronic кондиционерлари",
+        "Avalon кондиционерлари",
+        "Artel кондиционерлари",
+        "Beko кондиционерлари",
+        "AUX кондиционерлари",
+        "AVA кондиционерлари"
+      ]
+    }
+  },
+  {
+    "title": "Телевизорлар ва телекарталар",
+    "img": "https://backend.texnomart.uz/files/global/new-photo/img/category_for_pc/televizori_i_telekarti.svg",
+    "category": {
+      "sub__title": "БАРЧА ТЕЛЕВИЗОРЛАР",
+      "sub__categories": [
+        "БАРЧА ТЕЛЕВИЗОРЛАР",
+        "Panasonic телевизорлари",
+        "Samsung телевизорлари",
+        "Premier телевизорлари",
+        "Shivaki телевизорлари",
+        "Roison телевизорлари",
+        "Philips телевизорлари",
+        "Roison телевизорлари"
+      ]
+    }
+  }
+]

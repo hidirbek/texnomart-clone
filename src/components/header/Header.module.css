@@ -6,16 +6,24 @@
 header {
   background-color: #f7f7f7;
   font-family: "Roboto", sans-serif;
+
+}
+.container{
+  max-width: 1488px;
+  margin:auto;
+  width: 100%;
+
 }
 header > .container {
-  max-width: 1488px;
-  margin: auto;
   padding: 20px 32px;
+  background-color: #f7f7f7;
+
 }
 .headerWrapper{
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 .header__searchWrapper {
   border: 2px solid #fbc100;

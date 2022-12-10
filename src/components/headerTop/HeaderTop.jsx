@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import { BsTelephone } from "react-icons/bs";
 import "./HeaderTop.css";
 import regionName from "../../JSON/dummy-regions.json";
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 
 function HeaderTop() {
   const [regionValue, setRegionValue] = useState("Тошкент");
@@ -22,7 +22,8 @@ function HeaderTop() {
             </div>
             <div className="header-region-value">
               {regionName.map((data) => (
-                <p key={uuidv4()}
+                <p
+                  key={uuidv4()}
                   className="header-top-data-text"
                   onClick={() => setRegionValue(data.region)}
                 >
@@ -32,15 +33,13 @@ function HeaderTop() {
             </div>
           </div>
           <ul className="header-top-navbar">
-            <li className="header-top-navbar-list">Bizning do'konlarimiz</li>
-            <li className="header-top-navbar-list B2B">B2B savdosi</li>
+            <li className="header-top-navbar-list">Бизнинг дўконларимиз</li>
+            <li className="header-top-navbar-list B2B">B2B савдоси</li>
             <li className="header-top-navbar-list">
-              Muddatli to'lovga sotib olish
+              Муддатли тўловга сотиб олиш
             </li>
-            <li className="header-top-navbar-list">To'lov usullari</li>
-            <li className="header-top-navbar-list">
-              Mahsulotlar uchun kafolat
-            </li>
+            <li className="header-top-navbar-list">Тўлов усуллари</li>
+            <li className="header-top-navbar-list">Маҳсулотлар учун кафолат</li>
           </ul>
         </div>
         <img
@@ -51,7 +50,7 @@ function HeaderTop() {
         <div className="header-top-right">
           <a href="tel:+998712099944">
             <div className="header-top-contact">
-              <span className="contact-name">Aloqa markazi :</span>
+              <span className="contact-name">Aлоқа маркази :</span>
               <BsTelephone className="call-icon-media" />
               <p className="contact-nommer">+99871 209 99 44</p>
             </div>
@@ -74,6 +73,12 @@ function HeaderTop() {
                 onClick={() => setLanguageValue("O`z")}
               >
                 O`z
+              </p>
+              <p
+                className="language-hover-value-list"
+                onClick={() => setLanguageValue("Ўз")}
+              >
+                Ўз
               </p>
             </div>
           </div>

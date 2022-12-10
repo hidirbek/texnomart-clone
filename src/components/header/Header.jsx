@@ -1,13 +1,14 @@
 import React from "react";
 import { useState } from "react";
+import c from "./Header.module.css";
+import HeaderTop from "../headerTop/HeaderTop";
+import searchCategories from "../../JSON/dummy-searchCategories.json"
+import SubHeader from "../subHeader/SubHeader";
 import { FiSearch } from "react-icons/fi";
 import { HiOutlineMicrophone } from "react-icons/hi";
 import { BsBoxSeam, BsHeart, BsCart3 } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 import { FaBalanceScaleLeft } from "react-icons/fa";
-import c from "./Header.module.css";
-import HeaderTop from "../headerTop/HeaderTop";
-import searchCategories from "../../JSON/dummy-searchCategories.json"
 import { v4 as uuidv4 } from 'uuid';
 
 const Header = () => {
@@ -82,6 +83,7 @@ const Header = () => {
           </div>
         </div>
       </div>
+      <SubHeader/>
     </header>
   );
 };

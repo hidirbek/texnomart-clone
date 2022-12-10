@@ -1,0 +1,41 @@
+.subheader {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 54px;
+}
+.container {
+  /* background-color: brown; */
+  max-width: 1488px;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.subheader_navlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.subheader_navItem{
+  cursor: pointer;
+  color: #373f41;
+  transition: 1s;
+  font-weight: 500;
+  font-size: 14px;
+}
+.subheader_navItem:hover{
+  color: #767676;
+  transition: 0.5s;
+}
+.fire-icon {
+  color: red;
+  font-size: 24px;
+}
+.sales{
+  color: #767676;
+  display: flex;align-items: center;
+  gap: 3px;
+}
