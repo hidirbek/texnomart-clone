@@ -315,7 +315,7 @@ ul {
     justify-content: center;
     padding: 10px;
     margin-right: 0px;
-    margin-left: 10px;
+
   }
 
   .header-top-content {
@@ -326,3 +326,9 @@ ul {
     display: none;
   }
 }
+@media only screen and (max-width: 330px) {
+  .header-region-div-media {
+    padding-left: 3px;
+  }
+}
+

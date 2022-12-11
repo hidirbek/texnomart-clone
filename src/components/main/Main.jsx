@@ -9,6 +9,7 @@ import ToplamProducts from "../toplamlar-products/ToplamProducts";
 import RecentlyProducts from "../recentlySeenProducts/RecentlyProducts";
 import DownloadApp from "../downloadApp/DownloadApp";
 import ForCredit from "../forCredit/ForCredit"
+import BottomNavbar from "../bottom-navbar/BottomNavbar";
 
 
 
@@ -28,6 +29,7 @@ const Main = () => {
       <DownloadApp />
       <ForCredit/>
       <RecentlyProducts />
+      <BottomNavbar/>
     </div>
   );
 };

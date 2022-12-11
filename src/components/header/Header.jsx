@@ -9,6 +9,7 @@ import { HiOutlineMicrophone } from "react-icons/hi";
 import { BsBoxSeam, BsHeart, BsCart3 } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 import { FaBalanceScaleLeft } from "react-icons/fa";
+import {GiHamburgerMenu} from "react-icons/gi"
 import { v4 as uuidv4 } from 'uuid';
 
 const Header = () => {
@@ -20,6 +21,9 @@ const Header = () => {
       <div className={c.container}>
         <div className={c.headerElements}>
           <div className={c.headerWrapper}>
+            <div className={c.hamburgerMenu__wrapper}>
+              <GiHamburgerMenu className={c.hamburgerMenu}/>
+            </div>
             <div className={c.logoWrapper}>
               <a href="/" className={c.logo__link}>
                 <img

@@ -1,0 +1,41 @@
+
+.bottom-navbar-media{
+  width: 100%;
+  height: 56px;
+  padding: 7px 30px;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  justify-content: space-between;
+  color: #fff;
+}
+.bottom-navbar-items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.catalog-icon{
+  width: 24px;
+}
+.bottom-navbar-icons{
+  font-size: 20px;
+}
+
+.icon-title{
+  font-size: 10px;
+}
+@media only screen and (max-width:1024px) {
+  .bottom-navbar-media{
+    display: flex;
+  }
+}
+@media only screen and (max-width:350px) {
+  .bottom-navbar-media{
+    padding: 7px 10px;
+  }
+}
