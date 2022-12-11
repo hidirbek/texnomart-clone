@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
-import "./ZorNarx.css";
+import "./NewProducts.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsHeart, BsCart3 } from "react-icons/bs";
@@ -10,7 +10,7 @@ import { FaBalanceScaleLeft } from "react-icons/fa";
 
 import axios from "axios";
 
-const ZorNarx = () => {
+const NewProducts = () => {
   const [productData, setProductData] = useState([]);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const ZorNarx = () => {
 
   return (
     <div>
-      <h2 className="zor-narx-title">Зўр нарх</h2>
+      <h2 className="new-produts-title">Янги маҳсулотлар</h2>
       <div>
         <Swiper
           slidesPerView={6}
@@ -52,7 +52,7 @@ const ZorNarx = () => {
           }}
           className="swipper wrapper productCards"
         >
-          {productData.slice(0, 10).map(({ id, images, title, price }) => {
+          {productData.slice(10, 14).map(({ id, images, title, price }) => {
             return (
               <SwiperSlide className="product-slide" key={id}>
                 <Link className="product-card-link" to={`${id}`}>
@@ -72,10 +72,12 @@ const ZorNarx = () => {
               </SwiperSlide>
             );
           })}
+          <SwiperSlide></SwiperSlide>
+          <SwiperSlide></SwiperSlide>
         </Swiper>
       </div>
     </div>
   );
 };
 
-export default ZorNarx;
+export default NewProducts;

@@ -3,6 +3,10 @@ import Banner from "../hero-banner/HeroBanner";
 import Swiper from "../swiper/Swiper";
 import CategorySwiper from "../category-swiper/CategorySwiper";
 import ZorNarx from "../zor-narx/ZorNarx";
+import NewProductsSwiper from "../new-product-swiper/NewProductsSwiper"
+import XitSales from "../xit-salesSwiper/XitSales";
+
+
 const Main = () => {
   return (
     <div>
@@ -10,6 +14,8 @@ const Main = () => {
       <Swiper />
       <CategorySwiper />
       <ZorNarx/>
+      <NewProductsSwiper/>
+      <XitSales/>
     </div>
   );
 };

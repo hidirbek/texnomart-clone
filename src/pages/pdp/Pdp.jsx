@@ -1,8 +1,11 @@
 import React from 'react'
+import Layout from "../../components/layout/Layout"
 
 const Pdp = () => {
   return (
-    <div>Pdp</div>
+    <Layout>
+      <p>pdp</p>
+    </Layout>
   )
 }
 
