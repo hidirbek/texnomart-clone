@@ -14,7 +14,7 @@ import { Navigation } from "swiper";
 
 const SwiperFunc = () => {
   return (
-    <>
+    <div className="container">
       <Swiper
         slidesPerView={8}
         spaceBetween={30}
@@ -52,7 +52,7 @@ const SwiperFunc = () => {
           );
         })}
       </Swiper>
-    </>
+    </div>
   );
 };
 

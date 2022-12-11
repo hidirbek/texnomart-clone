@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
-import "./NewProducts.css";
+import "./ToplamProducts.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsHeart, BsCart3 } from "react-icons/bs";
@@ -10,7 +10,7 @@ import { FaBalanceScaleLeft } from "react-icons/fa";
 
 import axios from "axios";
 
-const NewProducts = () => {
+const ToplamProducts = () => {
   const [productData, setProductData] = useState([]);
 
   useEffect(() => {
@@ -22,8 +22,9 @@ const NewProducts = () => {
   // console.log(productData);
 
   return (
-    <div>
-      <h2 className="section-title new-produts-title">Янги маҳсулотлар</h2>
+    <div className="container">
+      <h2 className="section-title toplam-products-title">Тўпламлар</h2>
+      <Link to="/" className="recomendation">Сизга тавсия қиламиз</Link>
       <div>
         <Swiper
           slidesPerView={6}
@@ -55,7 +56,7 @@ const NewProducts = () => {
           }}
           className="swipper wrapper productCards"
         >
-          {productData.slice(10, 14).map(({ id, images, title, price }) => {
+          {productData.slice(25, 35).map(({ id, images, title, price }) => {
             return (
               <SwiperSlide className="product-slide" key={id}>
                 <Link className="product-card-link" to={`${id}`}>
@@ -75,12 +76,10 @@ const NewProducts = () => {
               </SwiperSlide>
             );
           })}
-          <SwiperSlide></SwiperSlide>
-          <SwiperSlide></SwiperSlide>
         </Swiper>
       </div>
     </div>
   );
 };
 
-export default NewProducts;
+export default ToplamProducts;

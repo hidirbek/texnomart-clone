@@ -1,0 +1,52 @@
+.download-app-wrapper > .container {
+  padding: 0 32px;
+}
+.app-img-wrapper {
+  /* margin: auto; */
+}
+.download-app-section {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-evenly;
+}
+.app-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.app-title {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 140%;
+  color: #000;
+  margin-bottom: 20px;
+}
+.app-txt {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  max-width: 420px;
+}
+.scanner-img-wrapper{
+  display: flex;
+  gap:  15px;
+  align-items: center;
+}
+.qr-img {
+  width: 112px;
+  height: 112px;
+}
+.qr-txt{
+  max-width: 180px;
+  font-size: 16px;
+}
+.g-play-img{
+  margin-top: 15px;
+  width: 117px;
+}
+@media only screen and (max-width:1024px) {
+  .download-app-wrapper{
+    display: none;
+  }
+}

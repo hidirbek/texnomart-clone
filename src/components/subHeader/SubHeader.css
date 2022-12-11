@@ -3,8 +3,7 @@
   width: 100%;
   height: 54px;
 }
-.container {
-  /* background-color: brown; */
+.subheader>.container {
   max-width: 1488px;
   height: 100%;
   width: 100%;

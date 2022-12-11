@@ -1,3 +1,4 @@
+
 .categoryTitle {
   padding-left: 30px;
   color: #333;
@@ -28,8 +29,7 @@
   width: 44px;
   height: 44px;
 }
-.category-name {
-}
+
 .category-swiper > .swiper-button-next {
   right: 15px;
 }
@@ -74,10 +74,9 @@
   .category-swiper > .swiper-button-next::after {
     display: none;
   }
-}
-
-@media only screen and (max-width: 1024px) {
   .category-name {
     display: none;
   }
 }
+
+

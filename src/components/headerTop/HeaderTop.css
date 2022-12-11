@@ -40,12 +40,30 @@ ul {
 .header-region-div:hover .header-region-value {
   display: block;
 }
+.header-region-value-media{
+  display: none;
+}
+.header-region-div-media:hover .header-region-value-media {
+  display: block;
+}
 
 .header-region-value {
   width: 170px;
   position: absolute;
   top: 36px;
   left: 0;
+  background-color: white;
+  box-shadow: 0px 0px 0px 2px rgb(241, 238, 238);
+  display: none;
+  color: black;
+  border-radius: 5px;
+  z-index: 10;
+}
+.header-region-value-media{
+    width: 170px;
+  position: absolute;
+  top: 40px;
+  right: 0;
   background-color: white;
   box-shadow: 0px 0px 0px 2px rgb(241, 238, 238);
   display: none;

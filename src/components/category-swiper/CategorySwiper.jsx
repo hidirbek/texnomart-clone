@@ -14,7 +14,7 @@ import { Navigation } from "swiper";
 
 const CategorySwiper = () => {
   return (
-    <>
+    <div className="container">
       <h3 className="categoryTitle">Оммабоп категориялар</h3>
       <Swiper
         slidesPerView={6}
@@ -68,7 +68,7 @@ const CategorySwiper = () => {
           );
         })}
       </Swiper>
-    </>
+    </div>
   );
 };
 

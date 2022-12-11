@@ -1,0 +1,121 @@
+.site-footer {
+  width: 100%;
+  height: auto;
+  background-color: #333;
+  color: #fff;
+  margin: auto;
+}
+.site-footer > .container {
+  padding: 54px 32px 20px 24px;
+  max-width: 1488px;
+  margin: auto;
+}
+.media-footer-items{
+  display: none;
+}
+.footer-media-accorodion{
+  background-color: #333 !important;
+  border: none !important;
+  color: #fff !important  ;
+  box-shadow: 0 !important;
+  position: static !important;
+}
+.MuiAccordionSummary-expandIconWrapper {
+  color: #fff !important;
+}
+.footer-main {
+  border-bottom: 0.5px solid rgb(123, 123, 123);
+  padding-bottom: 20px;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tel-text {
+  margin-bottom: 14px;
+  font-size: 13px;
+}
+.tel-number {
+  font-weight: 500;
+  font-size: 28px;
+  color: #fff;
+}
+.social-media-icons {
+  margin: 40px 0 30px 0;
+}
+.icons {
+  font-size: 35px;
+  color: rgb(182, 180, 180);
+  margin-right: 10px;
+}
+
+.store-info {
+  display: block;
+  width: max-content;
+  margin: 30px 0;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 14px;
+}
+.footer-item-title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-item-link {
+  display: block;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  line-height: 200%;
+  letter-spacing: 0.2px;
+}
+.footer-list-item:last-child{
+  padding-right: 10%;
+}
+
+.subfooter {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.subfooter-txt {
+  max-width: 600px;
+  color: #ffffffb3;
+  font-size: 12px;
+}
+.payment-img-wrapper {
+  gap: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.payment-img-wrapper > img {
+  display: block;
+}
+
+.subfooter-media{
+  display: none;
+}
+
+@media only screen and (max-width:1024px) {
+  .subfooter-media{
+    display: block;
+  }
+  .subfooter{
+    flex-direction: column-reverse;
+  }
+  .subfooter-txt{
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+  }
+  .media-footer-items{
+    display: block;
+  }
+  .footer-list{
+    display: none;
+  }
+}

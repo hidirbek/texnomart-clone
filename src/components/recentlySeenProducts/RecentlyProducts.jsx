@@ -2,15 +2,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
-import "./NewProducts.css";
+import "./RecentlyProducts.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { BsHeart, BsCart3 } from "react-icons/bs";
-import { FaBalanceScaleLeft } from "react-icons/fa";
+import { BsCart3 } from "react-icons/bs";
+
 
 import axios from "axios";
 
-const NewProducts = () => {
+const RecentlyProducts = () => {
   const [productData, setProductData] = useState([]);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const NewProducts = () => {
 
   return (
     <div>
-      <h2 className="section-title new-produts-title">Янги маҳсулотлар</h2>
+      <h2 className="section-title recently-products-title">Яқинда кўриб чиқилган маҳсулотлар</h2>
       <div>
         <Swiper
           slidesPerView={6}
@@ -37,7 +37,7 @@ const NewProducts = () => {
             270: {
               slidesPerView: 1,
             },
-            380: {
+            450: {
               slidesPerView: 2,
             },
             580:{
@@ -62,14 +62,13 @@ const NewProducts = () => {
                   <div className="productCard-wrapper">
                     <img className="product-img" src={images} alt="img" />
                     <p className="product-title">{title}</p>
-                    <p className="product-price">{price}$</p>
+                    <p className="credit-price">{((price+99)/24).toFixed(4)} $ дан / 24 ой</p>
                   </div>
                   <div className="card-elements-wrapper">
+                    <p className="product-price">{price}$</p>
                     <div className="cart-wrapper">
-                      <BsCart3 /> <span className="cart-text">Саватчага</span>
+                      <BsCart3 />
                     </div>
-                    <BsHeart className="card-like-icon" />
-                    <FaBalanceScaleLeft className="card-balance-icon"/>
                   </div>
                 </Link>
               </SwiperSlide>
@@ -83,4 +82,4 @@ const NewProducts = () => {
   );
 };
 
-export default NewProducts;
+export default RecentlyProducts;

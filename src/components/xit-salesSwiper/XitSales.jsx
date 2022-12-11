@@ -22,8 +22,8 @@ const XitSales = () => {
   // console.log(productData);
 
   return (
-    <div>
-      <h2 className="xit-sales-title">Хит савдо</h2>
+    <div className="container">
+      <h2 className="section-title xit-sales-title">Хит савдо</h2>
       <div>
         <Swiper
           slidesPerView={6}
@@ -37,16 +37,19 @@ const XitSales = () => {
             270: {
               slidesPerView: 1,
             },
-            340: {
+            380: {
               slidesPerView: 2,
             },
-            550: {
+            580:{
+              slidesPerView:3
+            },
+            800: {
               slidesPerView: 4,
             },
-            1000: {
-              slidesPerView: 6,
+            1050: {
+              slidesPerView: 5,
             },
-            1200: {
+            1300: {
               slidesPerView: 6,
             },
           }}
@@ -63,7 +66,7 @@ const XitSales = () => {
                   </div>
                   <div className="card-elements-wrapper">
                     <div className="cart-wrapper">
-                      <BsCart3 /> Саватчага
+                      <BsCart3 /> <span className="cart-text">Саватчага</span>
                     </div>
                     <BsHeart className="card-like-icon" />
                     <FaBalanceScaleLeft className="card-balance-icon"/>

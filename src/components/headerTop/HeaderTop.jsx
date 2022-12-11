@@ -83,10 +83,23 @@ function HeaderTop() {
             </div>
           </div>
           <div className="header-region-div-media">
-            <SlLocationPin className="location-icons-media" />
-            <p className="regionValue-media">Toshkent</p>
+            <div className="header-region-div-media">
+              <SlLocationPin className="location-icons-media" />
+              <p className="regionValue-media">{regionValue}</p>
+            </div>
+            <div className="header-region-value-media">
+                {regionName.map((data) => (
+                  <p
+                    key={uuidv4()}
+                    className="header-top-data-text"
+                    onClick={() => setRegionValue(data.region)}
+                  >
+                    {data.region}
+                  </p>
+                ))}
+              </div>
+                    </div>
           </div>
-        </div>
       </div>
     </div>
   );

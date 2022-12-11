@@ -19,7 +19,7 @@ export default function HeroBanner() {
     "https://texnomart.uz/_ipx/f_webp,q_100,s_1920x400/https://backend.texnomart.uz/uploads/slides/2617201920kr.webp"
   ];
   return (
-    <>
+    <div className="container">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -38,6 +38,6 @@ export default function HeroBanner() {
         }
 
       </Swiper>
-    </>
+    </div>
   );
 }

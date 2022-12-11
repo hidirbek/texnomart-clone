@@ -1,0 +1,46 @@
+.credit-section > .container {
+  padding: 0 32px;
+  margin: auto;
+}
+.credit-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.service-swiper {
+  padding: 30px 0;
+  border-radius: 6px;
+  border: 1px solid #ececec;
+}
+.swiper-pagination-bullet {
+  display: none;
+}
+
+.service-item {
+  padding: 0 16px;
+  border-left: 1px solid #ececec;
+  height: 100%;
+  text-align: center;
+}
+.service-item-img {
+  margin: auto;
+}
+.sirvice-title {
+  font-weight: 500;
+  color: #333;
+  font-size: 16px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+.service-item-info {
+  max-width: 225px;
+  margin: 0 auto;
+  font-size: 13px;
+}
+
+@media only screen and (max-width:1024px) {
+  .swiper-pagination-bullet {
+    display: inline-block;
+  }
+}

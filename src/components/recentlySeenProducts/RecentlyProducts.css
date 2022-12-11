@@ -1,0 +1,15 @@
+.recently-products-title{
+  padding-top: 20px;
+  margin-left: 30px;
+}
+.product-price{
+  color: #333;
+}
+.credit-price{
+  font-weight: 500;
+  font-size: 12px;
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 50px;
+  background-color: #f4f4f4;
+}
