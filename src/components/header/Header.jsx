@@ -2,27 +2,34 @@ import React from "react";
 import { useState } from "react";
 import c from "./Header.module.css";
 import HeaderTop from "../headerTop/HeaderTop";
-import searchCategories from "../../JSON/dummy-searchCategories.json"
+import searchCategories from "../../JSON/dummy-searchCategories.json";
 import SubHeader from "../subHeader/SubHeader";
 import { FiSearch } from "react-icons/fi";
 import { HiOutlineMicrophone } from "react-icons/hi";
 import { BsBoxSeam, BsHeart, BsCart3 } from "react-icons/bs";
 import { IoPersonOutline } from "react-icons/io5";
 import { FaBalanceScaleLeft } from "react-icons/fa";
-import {GiHamburgerMenu} from "react-icons/gi"
-import { v4 as uuidv4 } from 'uuid';
+import { GiHamburgerMenu } from "react-icons/gi";
+import { v4 as uuidv4 } from "uuid";
 
-const Header = () => {
+const Header = ({ setIsSidebarOpen }) => {
   const [selectedOption, setSelectedOption] = useState("барча категориялар");
 
   return (
     <header>
-      <HeaderTop/>
+      <HeaderTop />
       <div className={c.container}>
         <div className={c.headerElements}>
           <div className={c.headerWrapper}>
-            <div className={c.hamburgerMenu__wrapper}>
-              <GiHamburgerMenu className={c.hamburgerMenu}/>
+            <div className={c.texnomart__sidebar}>
+              <div
+                className={c.headerCenter__sidebar}
+                onClick={() => {
+                  setIsSidebarOpen(true);
+                }}
+              >
+                <GiHamburgerMenu className={c.headerCenterSidebar__icons} />
+              </div>
             </div>
             <div className={c.logoWrapper}>
               <a href="/" className={c.logo__link}>
@@ -49,9 +56,13 @@ const Header = () => {
                     setSelectedOption(e.target.value);
                   }}
                 >
-                {searchCategories.map(el=>{
-                  return (<option key={uuidv4()} value={el.category.toLowerCase()}>{el.category}</option>)
-                })}
+                  {searchCategories.map((el) => {
+                    return (
+                      <option key={uuidv4()} value={el.category.toLowerCase()}>
+                        {el.category}
+                      </option>
+                    );
+                  })}
                 </select>
                 <input type="text" className={c.search__input} />
                 <button className={c.voice__search}>
@@ -87,7 +98,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <SubHeader/>
+      <SubHeader />
     </header>
   );
 };

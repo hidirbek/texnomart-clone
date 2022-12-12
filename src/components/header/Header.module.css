@@ -17,6 +17,21 @@ header > .container {
   padding: 20px 32px;
   background-color: #f7f7f7;
 }
+.texnomart__sidebar {
+  display: none;
+}
+.headerCenter__sidebar {
+  cursor: pointer;
+  background: #fbc100;
+  border-radius: 6px;
+  padding: 8px;
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .headerWrapper {
   display: flex;
   align-items: center;
@@ -152,5 +167,8 @@ header > .container {
   }
   .headerWrapper {
     margin: auto;
+  }
+  .texnomart__sidebar {
+    display: block;
   }
 }
