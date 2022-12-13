@@ -11,6 +11,5 @@ const firebaseConfig = {
 };
 const backend = firebase.initializeApp(firebaseConfig);
 const auth = backend.auth();
-const provider = new firebase.auth.PhoneAuthProvider();
 
-export { auth, provider, backend };
+export { auth, backend };

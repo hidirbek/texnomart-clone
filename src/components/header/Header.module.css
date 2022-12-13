@@ -32,6 +32,10 @@ header > .container {
   align-items: center;
   justify-content: center;
 }
+.login_btn{
+  border: none;
+  background-color: transparent;
+}
 .headerWrapper {
   display: flex;
   align-items: center;
@@ -107,6 +111,7 @@ header > .container {
   gap: 10px;
   text-align: center;
 }
+
 .sitenav__links {
   color: #333;
   text-decoration: none;

@@ -12,7 +12,7 @@ import { FaBalanceScaleLeft } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { v4 as uuidv4 } from "uuid";
 
-const Header = ({ setIsSidebarOpen }) => {
+const Header = ({ setIsSidebarOpen,setLoginOpen }) => {
   const [selectedOption, setSelectedOption] = useState("барча категориялар");
 
   return (
@@ -78,10 +78,10 @@ const Header = ({ setIsSidebarOpen }) => {
                 <BsBoxSeam />
                 <p className={c.icon__title}>Буюртма ҳолати</p>
               </a>
-              <a className={c.sitenav__links} href="/">
+              <button onClick={() => setLoginOpen(true)} className={[c.sitenav__links, c.login_btn].join(' ')} >
                 <IoPersonOutline />
                 <p className={c.icon__title}>Кириш</p>
-              </a>
+              </button>
               <a className={c.sitenav__links} href="/">
                 <FaBalanceScaleLeft />
                 <p className={c.icon__title}>Таққослаш</p>
