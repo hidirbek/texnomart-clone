@@ -18,7 +18,7 @@ import BottomNavbar from "../bottom-navbar/BottomNavbar";
 
 const Main = () => {
   return (
-    <div>
+    <>
       <Banner />
       <Swiper />
       <CategorySwiper />
@@ -29,8 +29,8 @@ const Main = () => {
       <DownloadApp />
       <ForCredit/>
       <RecentlyProducts />
-      <BottomNavbar/>
-    </div>
+      <BottomNavbar />
+    </>
   );
 };
 

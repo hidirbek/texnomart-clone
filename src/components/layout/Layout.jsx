@@ -7,7 +7,6 @@ import Login from '../login-modal/Login';
 const Layout = ({children}) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
-
   useEffect(() => {
     if (isSidebarOpen === true || loginOpen === true) {
       document.body.style.overflow = "hidden";
@@ -20,8 +19,8 @@ const Layout = ({children}) => {
   return (
     <>
       <Header isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} setLoginOpen={setLoginOpen}/>
-      {loginOpen ? <Login setLoginOpen={setLoginOpen} /> : null}
-      <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} />
+      {loginOpen ? <Login setLoginOpen={setLoginOpen} />: null}
+      <Sidebar isSidebarOpen={isSidebarOpen} setIsSidebarOpen={setIsSidebarOpen} loginOpen={loginOpen} setLoginOpen={setLoginOpen}/>
       {isSidebarOpen && <Overlay setIsSidebarOpen={setIsSidebarOpen} />}
       <main>{children}</main>
       <Footer/>

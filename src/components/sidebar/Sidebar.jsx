@@ -5,12 +5,14 @@ import { FiX } from "react-icons/fi";
 import { useState } from "react";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import sidebarData from "../../JSON/sidebar.json";
-const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
+const Sidebar = ({ isSidebarOpen, setIsSidebarOpen, loginOpen, setLoginOpen }) => {
   const [isActive, setIsActive] = useState(false);
+  if (loginOpen === true){
+    setIsSidebarOpen(false)
+  }
   return (
     <div className={isSidebarOpen === true ? `sidebar active` : `sidebar`}>
       <div className="sidebar-header-top">
-        {/* <img className="sidebar-logo" src={sidebar_logo} alt="header-logo" /> */}
         <FiX
           className="close"
           onClick={() => {
@@ -37,9 +39,9 @@ const Sidebar = ({ isSidebarOpen, setIsSidebarOpen }) => {
             ></path>
           </svg>
         </div>
-        <p className="sidebar-header-kirish">Кириш</p>
+        <p onClick={() => setLoginOpen(true)}  className="sidebar-header-kirish">Кириш</p>
         <p className="sidebar-header-bottom-line"></p>
-        <p className="sidebar-header-login">Руйхатдан утиш</p>
+        <p onClick={() => (setLoginOpen(true))} className="sidebar-header-login">Руйхатдан утиш</p>
       </div>
       <div className="header-nav-list">
         <ul className="header-nav-list-group">
