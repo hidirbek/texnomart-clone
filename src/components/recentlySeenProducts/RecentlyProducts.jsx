@@ -6,12 +6,16 @@ import "./RecentlyProducts.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
+import { useDispatch } from "react-redux";
 
 
 import axios from "axios";
 
 const RecentlyProducts = () => {
   const [productData, setProductData] = useState([]);
+  const [cartNum, setCartNum] = useState(1);
+  const [productNum, setProductNum] = useState(1);
+  const dispatchs = useDispatch();
 
   useEffect(() => {
     axios
@@ -22,7 +26,7 @@ const RecentlyProducts = () => {
   // console.log(productData);
 
   return (
-    <div>
+    <div className="container">
       <h2 className="section-title recently-products-title">Яқинда кўриб чиқилган маҳсулотлар</h2>
       <div>
         <Swiper
@@ -64,13 +68,22 @@ const RecentlyProducts = () => {
                     <p className="product-title">{title}</p>
                     <p className="credit-price">{((price+99)/24).toFixed(4)} $ дан / 24 ой</p>
                   </div>
+                </Link>
                   <div className="card-elements-wrapper">
                     <p className="product-price">{price}$</p>
-                    <div className="cart-wrapper">
+                    <div onClick={() => {
+                        setCartNum(cartNum + productNum);
+                        setProductNum(1);
+                        dispatchs({
+                          info: {title, images, price},
+                          type: "ADD_TO_CART",
+                          number: cartNum,
+                          state: true,
+                        });
+                      }} className="cart-wrapper">
                       <BsCart3 />
                     </div>
                   </div>
-                </Link>
               </SwiperSlide>
             );
           })}

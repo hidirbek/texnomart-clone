@@ -3,6 +3,9 @@ import { useState } from "react";
 import "./Catalog.css";
 import catalogData from "../../JSON/dummy-catalogue.json";
 import { IoIosArrowForward } from "react-icons/io";
+import { v4 as uuidv4 } from "uuid";
+
+
 const Catalog = () => {
   const [catalog, setCatalog] = useState(false);
   const [catalogIdx, setCatalogIdx] = useState(0);
@@ -90,13 +93,13 @@ const Catalog = () => {
             </div>
             {catalogData.map((el, index) => {
               return catalogIdx === index ? (
-                <div className="catalog-elements-container">
+                <div key={index} className="catalog-elements-container">
                   <div className="catalog-elements-box">
                     <h2 className="catalog-category-title">{el.title}</h2>
                     <div className="catalog-category-subtitles-wrapper">
                       <h3 className="catalog-category-subtile">{el.category.sub__title}</h3>
                       {el.category.sub__categories.map((el) => {
-                        return <p className="category-subtitles-info">{el}</p>;
+                        return <p key={uuidv4()} className="category-subtitles-info">{el}</p>;
                       })}
                     </div>
                   </div>

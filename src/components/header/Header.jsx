@@ -11,10 +11,11 @@ import { IoPersonOutline } from "react-icons/io5";
 import { FaBalanceScaleLeft } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { v4 as uuidv4 } from "uuid";
+import { useSelector } from 'react-redux';
 
-const Header = ({ setIsSidebarOpen,setLoginOpen }) => {
+const Header = ({ setIsSidebarOpen,setLoginOpen, setCartOpen }) => {
   const [selectedOption, setSelectedOption] = useState("барча категориялар");
-
+  const productNumInCart = useSelector(amountInfo => amountInfo.amountInfo.products)
   return (
     <header>
       <HeaderTop />
@@ -90,10 +91,11 @@ const Header = ({ setIsSidebarOpen,setLoginOpen }) => {
                 <BsHeart />
                 <p className={c.icon__title}>Севимлилар</p>
               </a>
-              <a className={c.sitenav__links} href="/">
+              <button onClick={()=>{setCartOpen(true)}} id={c.cart__btn} className={c.sitenav__links}>
                 <BsCart3 />
+                <p className={c.productNumInCart}>{productNumInCart}</p>
                 <p className={c.icon__title}>Саватча</p>
-              </a>
+              </button>
             </nav>
           </div>
         </div>

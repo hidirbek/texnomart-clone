@@ -7,11 +7,15 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BsHeart, BsCart3 } from "react-icons/bs";
 import { FaBalanceScaleLeft } from "react-icons/fa";
+import { useDispatch } from "react-redux";
 
 import axios from "axios";
 
 const ToplamProducts = () => {
   const [productData, setProductData] = useState([]);
+  const [cartNum, setCartNum] = useState(1);
+  const [productNum, setProductNum] = useState(1);
+  const dispatchs = useDispatch();
 
   useEffect(() => {
     axios
@@ -65,14 +69,23 @@ const ToplamProducts = () => {
                     <p className="product-title">{title}</p>
                     <p className="product-price">{price}$</p>
                   </div>
+                </Link>
                   <div className="card-elements-wrapper">
-                    <div className="cart-wrapper">
+                    <div onClick={() => {
+                        setCartNum(cartNum + productNum);
+                        setProductNum(1);
+                        dispatchs({
+                          info: {title, images, price},
+                          type: "ADD_TO_CART",
+                          number: cartNum,
+                          state: true,
+                        });
+                      }} className="cart-wrapper">
                       <BsCart3 /> <span className="cart-text">Саватчага</span>
                     </div>
                     <BsHeart className="card-like-icon" />
                     <FaBalanceScaleLeft className="card-balance-icon"/>
                   </div>
-                </Link>
               </SwiperSlide>
             );
           })}

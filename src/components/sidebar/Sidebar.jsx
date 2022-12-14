@@ -7,9 +7,7 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import sidebarData from "../../JSON/sidebar.json";
 const Sidebar = ({ isSidebarOpen, setIsSidebarOpen, loginOpen, setLoginOpen }) => {
   const [isActive, setIsActive] = useState(false);
-  if (loginOpen === true){
-    setIsSidebarOpen(false)
-  }
+
   return (
     <div className={isSidebarOpen === true ? `sidebar active` : `sidebar`}>
       <div className="sidebar-header-top">
